@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 .scrollbar-hide::-webkit-scrollbar{
-    display: none;
+    display: hidden;
 }
 .scrollbar-hide{
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
+.scrollbar-hide::-webkit-scrollbar-track{
+    background-color: brown;
+    color: brown;
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: .9rem;
+ }
+ 
+ *::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ *::-webkit-scrollbar-thumb{
+    background-color: rgb(216, 158, 140);
+    border-radius: 2rem;
+ }
