@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const CartModal = () => {
 
+
     const cartItem = true
 
     return (
