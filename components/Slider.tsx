@@ -36,18 +36,15 @@ const Slider = ()=>{
     const [current , setCurrent] = useState(0)
 
 
-    // برای اینکه اسلایدر خودش هر سه ثانیه حرکت کنه ******* 
-
-
-    // useEffect(()=>{
-    // const interval = setInterval(()=>{
+    useEffect(()=>{
+    const interval = setInterval(()=>{
      
-    //     setCurrent((prev)=> (prev === slides.length -1 ? 0 : prev+1))
+        setCurrent((prev)=> (prev === slides.length -1 ? 0 : prev+1))
      
-    // } , 3000)
+    } , 5000)
 
-    // return ()=> clearInterval(interval)
-    // } , [])
+    return ()=> clearInterval(interval)
+    } , [])
 
     return (
         <div className="h-[calc(100vh-80px)] overflow-hidden">
